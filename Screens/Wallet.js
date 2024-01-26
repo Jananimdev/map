@@ -15,28 +15,28 @@ const Wallet = () => {
     { id: 4, amount: 1000 },
   ]);
 
-  const walletBalance = 5000;
+  const walletBalance = 200;
   const transactionHistory = [
     {
       id: 1,
       date: "2023-12-01",
       amount: -100,
-      description: "Purchase at Store",
+      
     },
     {
       id: 2,
       date: "2023-12-05",
       amount: 200,
-      description: "Received from John",
+      
     },
-    { id: 3, date: "2023-12-10", amount: -50, description: "Online Payment" },
+    { id: 3, date: "2023-12-10", amount: -50,  },
   ];
 
   const renderTransactionItem = ({ item }) => (
     <View style={styles.transactionItem}>
       <Text>Date: {item.date}</Text>
       <Text>Amount: {item.amount}</Text>
-      <Text>Description: {item.description}</Text>
+      
     </View>
   );
 
